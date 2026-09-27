@@ -1,0 +1,83 @@
+* {
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Russo One', sans-serif;
+    margin: 0; /*внешний отступ*/
+    padding: 0; /*внутренний отступ*/
+    background-color:bisque;   
+}
+
+header{
+        padding: 20px;
+        text-align: center;
+        background-color:burlywood;
+    }
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    color:darkblue;
+}
+
+nav a{
+    color:cornflowerblue;
+    margin-right: 15px;
+}
+
+footer a{
+    color:chocolate;
+    margin-right: 15px;
+}
+
+footer a:hover{
+    color:brown;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+main {
+    padding: 20px;
+}
+
+h1{
+    color:orangered;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color:orange;
+}
+
+table{
+    border-collapse: collapse;
+    width: 700px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th{
+    text-align: center;
+}
+
+td{
+    text-align: left;
+}
+
+footer {
+    background-color:black;
+    color:white;
+    padding: 20px;
+    text-align: center;
+}
