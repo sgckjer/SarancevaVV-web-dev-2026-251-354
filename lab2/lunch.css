@@ -40,3 +40,11 @@
     cursor: pointer;
     border: none;
 }
+
+.dish:hover {
+    border: 2px solid tomato;
+}
+
+.dish:hover button {
+    background-color: tomato;
+}
