@@ -23,9 +23,15 @@ a:hover{
     color:darkblue;
 }
 
-nav a{
+/*nav a{
     color:cornflowerblue;
     margin-right: 15px;
+}*/
+
+nav { 
+    display: inline-flex; 
+    gap: 15px; 
+    flex-wrap: wrap; 
 }
 
 footer a{
@@ -80,4 +86,12 @@ footer {
     color:white;
     padding: 20px;
     text-align: center;
+}
+
+.active {
+    color: tomato;
+}
+
+nav a {
+    color: rgb(44, 85, 160);
 }
