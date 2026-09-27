@@ -99,3 +99,9 @@ nav a {
 .active {
     color: tomato;
 }
+
+@media (max-width: 800px) {
+    .dishes {
+        grid-template-columns: 1fr 1fr;
+    }
+}

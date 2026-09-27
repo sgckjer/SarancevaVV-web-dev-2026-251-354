@@ -100,3 +100,8 @@ nav a {
     color: rgb(44, 85, 160);
 }
 
+@media (max-width: 800px) {
+    nav {
+        justify-content: space-between;
+    }
+}
