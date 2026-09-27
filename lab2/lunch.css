@@ -1,0 +1,42 @@
+.dishes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.dish{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 35px;
+    cursor: pointer;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    background-color: white;
+}
+
+.dish img {
+    width: 100%;
+    border-radius: 35px;
+}
+
+.dish p:nth-child(2) {
+    font-size: 20px;
+}
+
+.dish p:nth-child(3) {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dish p:nth-child(4) {
+    color: gray;
+}
+
+.dish button {
+    background-color: #f1eee9;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
