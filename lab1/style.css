@@ -6,7 +6,10 @@ body{
     font-family: 'Russo One', sans-serif;
     margin: 0; /*внешний отступ*/
     padding: 0; /*внутренний отступ*/
-    background-color:bisque;   
+    background-color:bisque; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
 }
 
 header{
@@ -51,6 +54,7 @@ img {
 
 main {
     padding: 20px;
+    flex-grow: 1;
 }
 
 h1{
