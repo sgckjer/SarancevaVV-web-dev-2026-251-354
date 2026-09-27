@@ -101,7 +101,36 @@ nav a {
 }
 
 @media (max-width: 800px) {
-    .dishes {
-        grid-template-columns: 1fr 1fr;
+    nav {
+        justify-content: space-between;
+    }
+    img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        font-size: calc(1em + 4px);
+    }
+    img {
+        width: 100%;
+    }
+    table {
+        font-size: calc(1em - 2px);
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    table {
+        font-size: calc(1em - 4px);
     }
 }
