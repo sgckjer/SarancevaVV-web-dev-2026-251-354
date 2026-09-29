@@ -189,3 +189,10 @@
     border: 1px solid black;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    .form-columns {
+        grid-template-columns: 1fr;
+        max-width: 240px;
+    }
+}
