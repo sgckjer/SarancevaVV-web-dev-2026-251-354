@@ -132,3 +132,60 @@
     padding: 8px;
     resize: vertical;
 }
+
+.checkbox-row,
+.radio-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox-row {
+    margin-top: 15px;
+}
+
+.radio-row {
+    margin-top: 8px;
+}
+
+.checkbox-row input,
+.radio-row input {
+    margin: 0;
+}
+
+.checkbox-row label,
+.radio-row label {
+    margin: 0;
+}
+
+.form-block fieldset {
+    border: none;
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+.form-block legend {
+    padding: 0;
+    font-size: 16px;
+}
+
+.hint {
+    font-style: italic;
+    font-size: 14px;
+    margin: 5px 0 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.buttons button {
+    width: 115px;
+    height: 28px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
