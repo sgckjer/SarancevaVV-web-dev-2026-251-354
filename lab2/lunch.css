@@ -105,3 +105,30 @@
     font-weight: normal;
     margin-bottom: 10px;
 }
+
+.form-block label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-block select,
+.form-block input[type="text"],
+.form-block input[type="email"],
+.form-block input[type="tel"],
+.form-block input[type="time"],
+.form-block textarea {
+    width: 240px;
+    height: 32px;
+    padding: 0 8px;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.form-block textarea {
+    height: 95px;
+    padding: 8px;
+    resize: vertical;
+}
