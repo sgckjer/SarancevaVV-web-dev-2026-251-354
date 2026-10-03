@@ -48,33 +48,28 @@
         <h2>Сделать заказ</h2>
         <form action="https://httpbin.org/post" method="POST">
             <div class="form-columns">
-
                 <div class="form-block">
                     <h3>Ваш заказ</h3>
 
-                    <label for="soup">Суп</label>
-                    <select id="soup" name="soup" required>
-                        <option value="">-- Выберите суп --</option>
-                        <option value="gaspacho">Гаспачо</option>
-                        <option value="mushroom_soup">Грибной суп-пюре</option>
-                        <option value="norway_soup">Норвежский суп</option>
-                    </select>
+                    <p id="nothing-selected">Ничего не выбрано</p>
 
-                    <label for="main-dish">Главное блюдо</label>
-                    <select id="main-dish" name="main-dish" required>
-                        <option value="">-- Выберите главное блюдо --</option>
-                        <option value="potato">Жареная картошка с грибами</option>
-                        <option value="lasagna">Лазанья</option>
-                        <option value="cutlet">Котлеты из курицы с картофельным пюре</option>
-                    </select>
+                    <div id="order-summary" hidden>
+                        <p class="order-label">Суп</p>
+                        <p class="order-value" id="soup-selected"></p>
 
-                    <label for="drink">Напиток</label>
-                    <select id="drink" name="drink" required>
-                        <option value="">-- Выберите напиток --</option>
-                        <option value="orange-juice">Апельсиновый сок</option>
-                        <option value="apple-juice">Яблочный сок</option>
-                        <option value="carrot-juice">Морковный сок</option>
-                    </select>
+                        <p class="order-label">Главное блюдо</p>
+                        <p class="order-value" id="main-selected"></p>
+
+                        <p class="order-label">Напиток</p>
+                        <p class="order-value" id="drink-selected"></p>
+
+                        <p class="order-label">Стоимость заказа</p>
+                        <p class="order-value" id="order-total"></p>
+                    </div>
+
+                    <input type="hidden" id="soup-input" name="soup">
+                    <input type="hidden" id="main-input" name="main-dish">
+                    <input type="hidden" id="drink-input" name="drink">
 
                     <label for="comment">Комментарии к заказу</label>
                     <textarea id="comment" name="comment"></textarea>
