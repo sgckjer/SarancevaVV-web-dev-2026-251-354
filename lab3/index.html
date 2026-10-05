@@ -26,22 +26,36 @@
     </header>
     
     <main>
-    
+        
         <section>
             <h2>Выберите суп</h2>
+            <div class="filters" data-filter-for="soup">
+                <button type="button" class="filter-btn" data-kind="fish">Рыбный</button>
+                <button type="button" class="filter-btn" data-kind="meat">Мясной</button>
+                <button type="button" class="filter-btn" data-kind="veg">Вегетарианский</button>
+            </div>
             <div class="dishes" data-category="soup"></div>
         </section>
 
         <section>
             <h2>Выберите главное блюдо</h2>
+            <div class="filters" data-filter-for="main">
+                <button type="button" class="filter-btn" data-kind="fish">Рыбное</button>
+                <button type="button" class="filter-btn" data-kind="meat">Мясное</button>
+                <button type="button" class="filter-btn" data-kind="veg">Вегетарианское</button>
+            </div>
             <div class="dishes" data-category="main"></div>
         </section>
 
         <section>
             <h2>Выберите напиток</h2>
+            <div class="filters" data-filter-for="drink">
+                <button type="button" class="filter-btn" data-kind="cold">Холодный</button>
+                <button type="button" class="filter-btn" data-kind="hot">Горячий</button>
+            </div>
             <div class="dishes" data-category="drink"></div>
         </section>
-        
+
     </main>
     
     <section class="order">

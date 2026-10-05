@@ -18,8 +18,8 @@ function updateOrder() {
 
     for (const category in selected) {
         const dish = selected[category];
-        const textEl = document.getElementById(`${category}-selected`);
-        const inputEl = document.getElementById(`${category}-input`);
+        const textEl = document.getElementById(`${category}-selected`); //тут ищу абзац, куда закинуть
+        const inputEl = document.getElementById(`${category}-input`); // а тут кладу ключ для сервера
 
         if (dish) {
             textEl.textContent = `${dish.name} ${dish.price}₽`;

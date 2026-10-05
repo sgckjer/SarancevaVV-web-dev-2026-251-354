@@ -209,3 +209,28 @@
 .order-value {
     margin: 0;
 }
+
+.filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: tomato;
+    color: white;
+    border-color: tomato;
+}
+
+.dish[hidden] {
+    display: none;
+}
