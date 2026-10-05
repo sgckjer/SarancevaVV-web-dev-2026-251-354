@@ -6,6 +6,7 @@ dishes.forEach((dish) => {
     const card = document.createElement("div");
     card.classList.add("dish");
     card.dataset.dish = dish.keyword;
+    card.dataset.kind = dish.kind;
 
     card.innerHTML = `
         <img src="${dish.image}" alt="${dish.name}">
