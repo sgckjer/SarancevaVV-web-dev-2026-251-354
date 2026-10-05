@@ -3,13 +3,17 @@
 const selected = {
     soup: null,
     main: null,
+    salad: null,
     drink: null,
+    dessert: null,
 };
 
 const emptyText = {
     soup: "Блюдо не выбрано",
     main: "Блюдо не выбрано",
+    salad: "Блюдо не выбрано",
     drink: "Напиток не выбран",
+    dessert: "Десерт не выбран",
 };
 
 function updateOrder() {

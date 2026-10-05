@@ -24,9 +24,9 @@
             <a href="#footer">Контакты</a>
         </nav>
     </header>
-    
+
     <main>
-        
+
         <section>
             <h2>Выберите суп</h2>
             <div class="filters" data-filter-for="soup">
@@ -56,12 +56,33 @@
             <div class="dishes" data-category="drink"></div>
         </section>
 
+        <section>
+            <h2>Выберите салат или стартер</h2>
+            <div class="filters" data-filter-for="salad">
+                <button type="button" class="filter-btn" data-kind="fish">Рыбный</button>
+                <button type="button" class="filter-btn" data-kind="meat">Мясной</button>
+                <button type="button" class="filter-btn" data-kind="veg">Вегетарианский</button>
+            </div>
+            <div class="dishes" data-category="salad"></div>
+        </section>
+
+        <section>
+            <h2>Выберите десерт</h2>
+            <div class="filters" data-filter-for="dessert">
+                <button type="button" class="filter-btn" data-kind="small">Маленькая порция</button>
+                <button type="button" class="filter-btn" data-kind="medium">Средняя порция</button>
+                <button type="button" class="filter-btn" data-kind="large">Большая порция</button>
+            </div>
+            <div class="dishes" data-category="dessert"></div>
+        </section>
+
     </main>
-    
+
     <section class="order">
         <h2>Сделать заказ</h2>
         <form action="https://httpbin.org/post" method="POST">
             <div class="form-columns">
+
                 <div class="form-block">
                     <h3>Ваш заказ</h3>
 
@@ -74,8 +95,14 @@
                         <p class="order-label">Главное блюдо</p>
                         <p class="order-value" id="main-selected"></p>
 
+                        <p class="order-label">Салат или стартер</p>
+                        <p class="order-value" id="salad-selected"></p>
+
                         <p class="order-label">Напиток</p>
                         <p class="order-value" id="drink-selected"></p>
+
+                        <p class="order-label">Десерт</p>
+                        <p class="order-value" id="dessert-selected"></p>
 
                         <p class="order-label">Стоимость заказа</p>
                         <p class="order-value" id="order-total"></p>
@@ -83,7 +110,9 @@
 
                     <input type="hidden" id="soup-input" name="soup">
                     <input type="hidden" id="main-input" name="main-dish">
+                    <input type="hidden" id="salad-input" name="salad">
                     <input type="hidden" id="drink-input" name="drink">
+                    <input type="hidden" id="dessert-input" name="dessert">
 
                     <label for="comment">Комментарии к заказу</label>
                     <textarea id="comment" name="comment"></textarea>
@@ -139,6 +168,6 @@
     <footer id="footer">
         <p>Позвонить нам <a href="tel:+70000000000">+7-000-000-00-00</a></p>
     </footer>
-    
+
 </body>
 </html>
