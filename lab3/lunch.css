@@ -234,3 +234,84 @@
 .dish[hidden] {
     display: none;
 }
+
+.combo-section {
+    padding: 20px;
+}
+
+.combo-section h2 {
+    text-align: center;
+}
+
+.combo-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.combo {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.1));
+}
+
+.combo-dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+.combo-dish img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+.combo-dish img:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+.combo-caption {
+    margin-top: 8px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.dessert-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dessert-note img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.dessert-note p {
+    font-size: 14px;
+    color: gray;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .combo-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .combo-list {
+        grid-template-columns: 1fr;
+    }
+}
