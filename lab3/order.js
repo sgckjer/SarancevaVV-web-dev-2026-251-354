@@ -55,12 +55,6 @@ function selectDish(card) {
     updateOrder();
 }
 
-document.querySelectorAll(".dish button").forEach((button) => {
-    button.addEventListener("click", () => {
-        selectDish(button.closest(".dish"));
-    });
-});
-
 document.querySelector("form").addEventListener("reset", () => {
     for (const category in selected) {
         selected[category] = null;
