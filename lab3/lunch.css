@@ -390,3 +390,24 @@
     pointer-events: none;
     cursor: not-allowed;
 }
+
+.empty-msg {
+    text-align: center;
+    font-size: 18px;
+    margin: 40px 0;
+}
+
+.empty-msg a {
+    color: tomato;
+    text-decoration: underline;
+}
+
+.dish button.delete-btn {
+    background-color: #ffdddd;
+    color: #cc0000;
+}
+
+.dish button.delete-btn:hover {
+    background-color: #cc0000;
+    color: white;
+}
