@@ -523,3 +523,7 @@
     display: inline-block;
     min-width: 160px;
 }
+
+.notification-overlay[hidden] {
+    display: none !important;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История заказов - Food Construct</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lunch.css">
+    <script src="orders.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Food Construct</h1>
+        <nav>
+            <a href="../lab1/index.html">О нас</a>
+            <a href="index.html">Собрать ланч</a>
+            <a href="order.html">Оформить заказ</a>
+            <a href="orders.html" class="active">Заказы</a>
+            <a href="#footer">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>История заказов</h2>
+            <div class="orders-table-container">
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Дата оформления</th>
+                            <th>Состав заказа</th>
+                            <th>Стоимость</th>
+                            <th>Время доставки</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orders-tbody">
+                        <tr>
+                            <td colspan="6" style="text-align: center;">Загрузка заказов...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal-view" class="notification-overlay" hidden>
+        <div class="modal-dialog">
+            <button type="button" class="modal-close-btn" data-close>&times;</button>
+            <h3>Просмотр заказа</h3>
+            <div id="view-details-content"></div>
+            <div class="modal-actions">
+                <button type="button" class="notification-btn" data-close>Ок</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-edit" class="notification-overlay" hidden>
+        <div class="modal-dialog">
+            <button type="button" class="modal-close-btn" data-close>&times;</button>
+            <h3>Редактирование заказа</h3>
+            <form id="edit-order-form">
+                <input type="hidden" id="edit-order-id">
+                <div class="form-block">
+                    <label for="edit-name">Имя</label>
+                    <input type="text" id="edit-name" name="name" required>
+
+                    <label for="edit-email">Email</label>
+                    <input type="email" id="edit-email" name="email" required>
+
+                    <label for="edit-phone">Номер телефона</label>
+                    <input type="tel" id="edit-phone" name="phone" required>
+
+                    <label for="edit-address">Адрес доставки</label>
+                    <input type="text" id="edit-address" name="address" required>
+
+                    <fieldset>
+                        <legend>Время доставки:</legend>
+                        <div class="radio-row">
+                            <input type="radio" id="edit-asap" name="delivery-time" value="now" required>
+                            <label for="edit-asap">Как можно скорее</label>
+                        </div>
+                        <div class="radio-row">
+                            <input type="radio" id="edit-scheduled" name="delivery-time" value="by_time">
+                            <label for="edit-scheduled">К указанному времени</label>
+                        </div>
+                    </fieldset>
+
+                    <label for="edit-delivery-time-value">Укажите время доставки</label>
+                    <input type="time" id="edit-delivery-time-value" name="delivery-time-value" min="07:00" max="23:00" step="300">
+
+                    <label for="edit-comment">Комментарии</label>
+                    <textarea id="edit-comment" name="comment"></textarea>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="action-btn" data-close>Отмена</button>
+                    <button type="submit" class="notification-btn" style="margin-top:0;">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal-delete" class="notification-overlay" hidden>
+        <div class="modal-dialog">
+            <button type="button" class="modal-close-btn" data-close>&times;</button>
+            <h3>Удаление заказа</h3>
+            <p>Вы уверены, что хотите удалить этот заказ?</p>
+            <div class="modal-actions">
+                <button type="button" class="action-btn" data-close>Отмена</button>
+                <button type="button" id="confirm-delete-btn" class="notification-btn" style="margin-top:0; background-color:#cc0000;">Да</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p>Позвонить нам <a href="tel:+70000000000">+7-000-000-00-00</a></p>
+    </footer>
+
+</body>
+</html>
