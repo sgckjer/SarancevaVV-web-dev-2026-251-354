@@ -20,13 +20,9 @@ function renderDishes(dishList) {
             container.appendChild(card);
         }
 
-        // Слушатель кнопки "Добавить" прямо на созданную карточку
         const button = card.querySelector("button");
         button.addEventListener("click", () => {
             selectDish(card);
         });
     });
 }
-
-// Временно вызываем отрисовку со старым массивом, чтобы проверить работу:
-renderDishes(dishes);
