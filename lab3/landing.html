@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - Food Construct</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: 'Russo One', sans-serif !important;
+            background-color: bisque !important;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 20px !important;
+            text-align: center !important;
+            background-color: burlywood !important;
+        }
+
+        header h1 {
+            font-family: 'Russo One', sans-serif !important;
+            color: orangered !important;
+            margin: 0 0 10px 0;
+            font-size: 32px;
+            font-weight: normal;
+        }
+
+        nav {
+            display: inline-flex !important;
+            gap: 15px !important;
+            flex-wrap: wrap !important;
+            justify-content: center;
+        }
+
+        nav a {
+            font-family: 'Russo One', sans-serif !important;
+            text-decoration: none !important;
+            color: rgb(44, 85, 160) !important;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: darkblue !important;
+            text-decoration: none !important;
+        }
+
+        nav a.active {
+            color: tomato !important;
+            text-decoration: none !important;
+        }
+
+        @media (max-width: 800px) {
+            nav {
+                justify-content: space-between !important;
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column !important;
+                align-items: center !important;
+            }
+            nav a {
+                font-size: calc(1em + 4px) !important;
+            }
+        }
+
+        /* Футер в стиле оригинального сайта */
+        footer {
+            background-color: black !important;
+            color: white !important;
+            padding: 20px !important;
+            text-align: center !important;
+            font-family: 'Russo One', sans-serif !important;
+        }
+
+        footer a {
+            color: chocolate !important;
+            text-decoration: none !important;
+            margin-right: 15px;
+        }
+
+        footer a:hover {
+            color: brown !important;
+        }
+
+        .btn-brand {
+            background-color: #ff6347;
+            border-color: #ff6347;
+            color: #fff;
+            font-family: 'Russo One', sans-serif;
+        }
+        .btn-brand:hover {
+            background-color: #e05338;
+            border-color: #e05338;
+            color: #fff;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #fff2e6 0%, #ffe0cc 100%);
+            padding: 70px 0;
+            border-radius: 0 0 35px 35px;
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffe5df;
+            color: #ff6347;
+            border-radius: 50%;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .cta-section {
+            background: #ff6347;
+            color: white;
+            padding: 60px 20px;
+            border-radius: 35px;
+            margin: 40px auto;
+            max-width: 1140px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Food Construct</h1>
+        <nav>
+            <a href="landing.html" class="active">О нас</a>
+            <a href="index.html">Собрать ланч</a>
+            <a href="order.html">Оформить заказ</a>
+            <a href="orders.html">Заказы</a>
+            <a href="#footer">Контакты</a>
+        </nav>
+    </header>
+
+    <main class="p-0">
+
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h2 class="display-5 mb-3" style="color: orangered;">Вкусные бизнес-ланчи с доставкой по Москве</h2>
+                        <p class="lead text-secondary mb-4">
+                            Соберите идеальный обед сами: супы, горячее, салаты и напитки из натуральных продуктов. Доставим горячим прямо в офис или домой точно к назначенному времени.
+                        </p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-lg-start">
+                            <a href="index.html" class="btn btn-brand btn-lg px-4 py-3">Собрать свой ланч</a>
+                            <a href="#contacts" class="btn btn-outline-dark btn-lg px-4 py-3" style="font-family: 'Russo One', sans-serif;">Связаться с нами</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="img/main.png" class="img-fluid rounded-4 shadow" alt="Бизнес ланч Food Construct" style="max-height: 380px; width: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 class="display-6" style="color: orange;">Почему выбирают Food Construct</h2>
+                    <p class="text-muted fs-5">Мы заботимся о том, чтобы каждый ваш рабочий перерыв был вкусным и полезным</p>
+                </div>
+                <div class="row g-4 text-center">
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 border-0 shadow-sm rounded-4">
+                            <div class="card-body">
+                                <div class="feature-icon">
+                                    <i class="bi bi-sliders"></i>
+                                </div>
+                                <h4 class="card-title mb-3" style="color: orangered;">Гибкий конструктор</h4>
+                                <p class="card-text text-secondary">
+                                    Вы сами выбираете блюда под свой вкус и диету: мясные, рыбные или вегетарианские сбалансированные комбо.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 border-0 shadow-sm rounded-4">
+                            <div class="card-body">
+                                <div class="feature-icon">
+                                    <i class="bi bi-clock-history"></i>
+                                </div>
+                                <h4 class="card-title mb-3" style="color: orangered;">Быстрая доставка</h4>
+                                <p class="card-text text-secondary">
+                                    Доставляем как можно скорее или к точно выбранному времени с 7:00 до 23:00 в термобоксах.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4 border-0 shadow-sm rounded-4">
+                            <div class="card-body">
+                                <div class="feature-icon">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <h4 class="card-title mb-3" style="color: orangered;">Свежие продукты</h4>
+                                <p class="card-text text-secondary">
+                                    Готовим блюда только перед отправкой без использования полуфабрикатов и консервантов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section text-center">
+            <div class="container">
+                <h2 class="display-5 mb-3 text-white">Проголодались? Пора пообедать!</h2>
+                <p class="fs-5 mb-4 text-white opacity-75">Выберите любимые блюда из нашего меню и оформите заказ за 2 минуты.</p>
+                <a href="index.html" class="btn btn-light btn-lg px-5 py-3 text-danger shadow" style="font-family: 'Russo One', sans-serif;">
+                    Перейти в меню <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="py-5" id="contacts">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 class="display-6" style="color: orange;">Контакты и обратная связь</h2>
+                    <p class="text-muted fs-5">Остались вопросы или предложения по корпоративному питанию? Напишите нам!</p>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                            <h4 class="mb-4" style="color: orangered;">Наши контакты</h4>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-geo-alt-fill fs-4 text-danger me-3"></i>
+                                <span>г. Москва, ул. Большая Семёновская, д. 38</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-telephone-fill fs-4 text-danger me-3"></i>
+                                <a href="tel:+70000000000" style="color: chocolate; text-decoration: none;">+7-000-000-00-00</a>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-envelope-fill fs-4 text-danger me-3"></i>
+                                <span>lunch@foodconstruct.ru</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-clock-fill fs-4 text-danger me-3"></i>
+                                <span>Каждый день с 7:00 до 23:00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="p-4 bg-white rounded-4 shadow-sm">
+                            <h4 class="mb-4" style="color: orangered;">Напишите нам</h4>
+                            <form id="feedback-form" onsubmit="event.preventDefault(); alert('Спасибо за обращение! Мы свяжемся с вами в ближайшее время.'); this.reset();">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="fb-name" class="form-label">Ваше имя</label>
+                                        <input type="text" class="form-control" id="fb-name" required placeholder="Иван">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="fb-email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="fb-email" required placeholder="name@example.com">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="fb-subject" class="form-label">Тема сообщения</label>
+                                        <input type="text" class="form-control" id="fb-subject" required placeholder="Вопрос по заказу или сотрудничество">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="fb-message" class="form-label">Сообщение</label>
+                                        <textarea class="form-control" id="fb-message" rows="4" required placeholder="Напишите ваше сообщение..."></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-brand px-4 py-2">Отправить сообщение</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <p>Позвонить нам <a href="tel:+70000000000">+7-000-000-00-00</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
