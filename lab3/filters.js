@@ -10,7 +10,7 @@ document.querySelectorAll(".filters").forEach((filterBlock) => {
                 b.classList.remove("active");
             });
 
-            // Ищем карточки в момент клика, а не при старте скрипта
+            //ищем карточки в момент клика, а не при старте скрипта
             const cards = container ? container.querySelectorAll(".dish") : [];
 
             if (isActive) {

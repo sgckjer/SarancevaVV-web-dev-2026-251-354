@@ -22,6 +22,7 @@
         <nav>
             <a href="../lab1/index.html">О нас</a>
             <a href="#" class="active">Собрать ланч</a>
+            <a href="order.html">Оформить заказ</a>
             <a href="#">Заказы</a>
             <a href="#footer">Контакты</a>
         </nav>
@@ -166,92 +167,12 @@
         </div>
     </section>
 
-    <section class="order">
-        <h2>Сделать заказ</h2>
-        <form action="https://httpbin.org/post" method="POST">
-            <div class="form-columns">
-
-                <div class="form-block">
-                    <h3>Ваш заказ</h3>
-
-                    <p id="nothing-selected">Ничего не выбрано</p>
-
-                    <div id="order-summary" hidden>
-                        <p class="order-label">Суп</p>
-                        <p class="order-value" id="soup-selected"></p>
-
-                        <p class="order-label">Главное блюдо</p>
-                        <p class="order-value" id="main-selected"></p>
-
-                        <p class="order-label">Салат или стартер</p>
-                        <p class="order-value" id="salad-selected"></p>
-
-                        <p class="order-label">Напиток</p>
-                        <p class="order-value" id="drink-selected"></p>
-
-                        <p class="order-label">Десерт</p>
-                        <p class="order-value" id="dessert-selected"></p>
-
-                        <p class="order-label">Стоимость заказа</p>
-                        <p class="order-value" id="order-total"></p>
-                    </div>
-
-                    <input type="hidden" id="soup-input" name="soup">
-                    <input type="hidden" id="main-input" name="main-dish">
-                    <input type="hidden" id="salad-input" name="salad">
-                    <input type="hidden" id="drink-input" name="drink">
-                    <input type="hidden" id="dessert-input" name="dessert">
-
-                    <label for="comment">Комментарии к заказу</label>
-                    <textarea id="comment" name="comment"></textarea>
-                </div>
-
-                <div class="form-block">
-                    <h3>Ваши данные</h3>
-
-                    <label for="name">Имя</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <div class="checkbox-row">
-                        <input type="checkbox" id="subscribe" name="subscribe" checked>
-                        <label for="subscribe">Получать информацию о скидках и акциях</label>
-                    </div>
-
-                    <label for="phone">Номер телефона</label>
-                    <input type="tel" id="phone" name="phone" required>
-
-                    <label for="address">Адрес доставки</label>
-                    <input type="text" id="address" name="address" required>
-                    <p class="hint">Доставка осуществляется только по Москве</p>
-
-                    <fieldset>
-                        <legend>Время доставки:</legend>
-                        <div class="radio-row">
-                            <input type="radio" id="asap" name="delivery-time" value="asap" required>
-                            <label for="asap">Как можно скорее</label>
-                        </div>
-                        <div class="radio-row">
-                            <input type="radio" id="scheduled" name="delivery-time" value="scheduled">
-                            <label for="scheduled">К указанному времени</label>
-                        </div>
-                    </fieldset>
-
-                    <label for="delivery-time-value">Укажите время доставки</label>
-                    <input type="time" id="delivery-time-value" name="delivery-time-value" min="07:00" max="23:00" step="300">
-                    <p class="hint">Доступное время доставки с 7:00 до 23:00</p>
-
-                    <div class="buttons">
-                        <button type="reset">Сбросить</button>
-                        <button type="submit">Отправить</button>
-                    </div>
-                </div>
-
-            </div>
-        </form>
-    </section>
+    <div class="order-panel" id="order-panel" hidden>
+        <div class="order-panel-info">
+            Итого: <strong id="order-panel-price">0₽</strong>
+        </div>
+        <a href="order.html" class="order-panel-btn disabled" id="order-panel-link">Перейти к оформлению</a>
+    </div>
 
     <footer id="footer">
         <p>Позвонить нам <a href="tel:+70000000000">+7-000-000-00-00</a></p>

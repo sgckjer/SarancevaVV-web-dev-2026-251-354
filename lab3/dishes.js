@@ -12,13 +12,15 @@ async function loadDishes() {
         }
 
         const data = await response.json();
-
         data.sort((a, b) => a.name.localeCompare(b.name));
-
         dishes = data;
 
         if (typeof renderDishes === "function") {
             renderDishes(dishes);
+        }
+
+        if (typeof restoreSelectedDishes === "function") {
+            restoreSelectedDishes();
         }
     } catch (error) {
         console.error("Не удалось загрузить блюда:", error);

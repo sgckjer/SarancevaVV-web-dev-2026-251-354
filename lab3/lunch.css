@@ -352,3 +352,41 @@
     color: tomato;
     border: 1px solid tomato;
 }
+
+/*ЛР8*/
+.order-panel {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.15);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.order-panel-info {
+    font-size: 18px;
+}
+
+.order-panel-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: tomato;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: opacity 0.2s, background-color 0.2s;
+}
+
+.order-panel-btn.disabled {
+    background-color: #ccc;
+    color: #666;
+    pointer-events: none;
+    cursor: not-allowed;
+}

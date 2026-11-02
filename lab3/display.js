@@ -1,5 +1,18 @@
 /* global selectDish */
 
+// Сопоставляем все возможные варианты названий с сервера с нашими категориями в HTML
+const categoryMap = {
+    "soup": "soup",
+    "main-course": "main",
+    "main_course": "main",
+    "main": "main",
+    "salad": "salad",
+    "salads_starters": "salad",
+    "beverage": "drink",
+    "drink": "drink",
+    "dessert": "dessert"
+};
+
 function renderDishes(dishList) {
     dishList.forEach((dish) => {
         const card = document.createElement("div");
@@ -15,7 +28,9 @@ function renderDishes(dishList) {
             <button type="button">Добавить</button>
         `;
 
-        const container = document.querySelector(`.dishes[data-category="${dish.category}"]`);
+        const targetCategory = categoryMap[dish.category] || dish.category;
+        const container = document.querySelector(`.dishes[data-category="${targetCategory}"]`);
+
         if (container) {
             container.appendChild(card);
         }
