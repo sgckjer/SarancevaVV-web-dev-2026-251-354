@@ -411,3 +411,115 @@
     background-color: #cc0000;
     color: white;
 }
+
+/* ЛР 9 */
+.orders-table-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+.orders-table th {
+    background-color: #f8f6f0;
+    text-align: center;
+}
+
+.orders-table td.actions-cell {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.action-btn {
+    padding: 6px 10px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn-view {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+.btn-edit {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.btn-delete {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.modal-dialog {
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px 30px;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    box-sizing: border-box;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modal-dialog .form-block {
+    width: 100%;
+}
+
+.modal-dialog .form-block input[type="text"],
+.modal-dialog .form-block input[type="email"],
+.modal-dialog .form-block input[type="tel"],
+.modal-dialog .form-block input[type="time"],
+.modal-dialog .form-block textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.order-detail-row {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.order-detail-row strong {
+    display: inline-block;
+    min-width: 160px;
+}
